@@ -10,9 +10,8 @@ func main () {
 	PersonGreetAndEge("Sam", 14)
 	a,_,_ := Bezum() // так доставать значения если их несколько
 	fmt.Println(a)
-	
-
 }
+
 // без аргументов
 func Greet() {
 	fmt.Println("Hello")
