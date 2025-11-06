@@ -13,8 +13,8 @@ func main() {
 
 	l := [...]int{1, 3, 21, 3, 414, 5}
 	listRes(l[:])
-	fmt.Println(l)
 
+	fmt.Println(l)
 }
 
 func listRes(ls []int) {

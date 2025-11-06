@@ -20,7 +20,6 @@ func main() {
 	}
 
 	fmt.Println(map1)
-
 }
 
 type example struct {
