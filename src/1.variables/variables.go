@@ -7,15 +7,23 @@ import (
 var a = "global" // Объявление переменной на уровне пакета
 // aa := 111 глобальные переменные нельзя объявлять коротким синтаксисом
 
+// var Стандартное объявление переменных с явным указанием типа // var a int = 10
+// Объявление значения // var a int
+// Обязательно указывать тип
+
+// Короткое объявление // i := 10
+// Только внутри функций
+// Тип данных выбирается из литерала
+
 const name = "const" // Не меняют значение
 
 func main() {
 
-	// ПЕРЕМЕНННЫЕ В GO
+	// ПЕРЕМЕННЫЕ В GO
 
 	a := 10
 	_ = a
-	var rsr = 10
+	var rsr = 10_000
 	_ = rsr
 
 	var i int8 = 127
@@ -35,8 +43,8 @@ func main() {
 	var name string = "local" // локальная переменная перебьет глобальную
 	fmt.Print(name, "\n")
 
-	var bool = true
-	fmt.Print(bool)
+	var b = true
+	fmt.Print(b)
 
 	// ТИПОБЕЗОПАСНОСТЬ И ПРИВЕДЕНИЕ ТИПОВ
 
@@ -46,4 +54,17 @@ func main() {
 	var binary int = 0b10101101
 	fmt.Println(binary) // 173
 
+	// Переполнение
+	var i8 int8 = 127
+	fmt.Println(i8 + 2) // - 128 тк переполнение
+
+	t := new(int32)
+	aaa(t)
+
+}
+
+func aaa(temp *int32) {
+	var v int32 = 200
+	temp = &v
+	fmt.Println(*temp)
 }

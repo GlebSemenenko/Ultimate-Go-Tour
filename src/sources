@@ -1,0 +1,12 @@
+https://roadmap.sh/golang?fl=0 - roadmap
+https://go.dev/tour/list
+https://tour.ardanlabs.com/tour/rus/list
+https://go.dev/learn/
+
+Синтаксис:
+Создание переменной, короткий вариант и через `var`.
+Создание массива.
+Создание слайса. Создание слайса из массива.
+Итерация по слайсу и массиву.
+Создание мапы.
+Итерация по мапе.

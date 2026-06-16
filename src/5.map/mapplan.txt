@@ -1,6 +1,6 @@
 1) Как работает map под капотом
     Старая Map через Hash Table
-    Новая Map через Swith Table
+    Новая Map через Swiss Table
 
 2) Теоретические вопросы по map
 
